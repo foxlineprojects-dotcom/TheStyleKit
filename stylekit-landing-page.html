@@ -436,6 +436,9 @@
             margin-bottom: 1rem;
         }
     </style>
+    
+    <!-- Tally Popup Script - Load in head -->
+    <script src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
     <!-- Hero Section -->
@@ -448,7 +451,7 @@
                 StyleKit analyzes your aesthetic, brand pillars, and creative identity to produce 
                 refined, on-brand content ideas.
             </p>
-            <a href="#" class="cta-button" data-tally-open="D4ka8R" data-tally-layout="modal" data-tally-width="400">Apply for Early Access</a>
+            <button class="cta-button" data-tally-open="D4ka8R" data-tally-layout="modal" data-tally-width="400">Apply for Early Access</button>
         </div>
         <div class="hero-image">
             <img src="hero-image.jpg" alt="StyleKit - Content strategy for fashion and lifestyle creators" loading="eager">
@@ -624,7 +627,7 @@
                 <li>✓ Free aesthetic refreshes for 6 months</li>
             </ul>
             
-            <a href="#" class="cta-button" style="margin-top: 2rem;" data-tally-open="D4ka8R" data-tally-layout="modal" data-tally-width="400">Secure Your Spot — $67</a>
+            <button class="cta-button" style="margin-top: 2rem;" data-tally-open="D4ka8R" data-tally-layout="modal" data-tally-width="400">Secure Your Spot — $67</button>
         </div>
     </section>
 
@@ -658,7 +661,7 @@
             Join 50 fashion, beauty, and lifestyle creators building cohesive brands 
             without creative burnout.
         </p>
-        <a href="#" class="cta-button" data-tally-open="D4ka8R" data-tally-layout="modal" data-tally-width="400">Apply for Early Access</a>
+        <button class="cta-button" data-tally-open="D4ka8R" data-tally-layout="modal" data-tally-width="400">Apply for Early Access</button>
     </section>
 
     <!-- Footer -->
@@ -690,23 +693,6 @@
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
         });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
     </script>
-
-    <!-- Tally Popup -->
-    <script src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>
