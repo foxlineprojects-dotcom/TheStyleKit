@@ -278,6 +278,35 @@
             border-bottom: none;
         }
         
+        /* Waitlist Section */
+        .waitlist-section {
+            background: var(--light-gray);
+            padding: 6rem 2rem;
+            margin: 0;
+            max-width: 100%;
+        }
+        
+        .waitlist-card {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 3rem;
+            background: white;
+            border: 2px solid var(--charcoal);
+            text-align: center;
+        }
+        
+        .waitlist-card h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .waitlist-benefits {
+            text-align: left;
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--medium-gray);
+        }
+        
         /* Stats */
         .stats {
             background: var(--light-gray);
@@ -436,22 +465,18 @@
             margin-bottom: 1rem;
         }
     </style>
-    
-    <!-- Tally Popup Script - Load in head -->
-    <script src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <span class="badge">For Fashion, Beauty & Lifestyle Creators</span>
-            <h1>When You Don't Know What to Post — We Do.</h1>
+            <h1>Tired of generic content ideas? Meet the AI that gets your style.</h1>
             <div class="divider"></div>
             <p class="subheadline">
-                StyleKit analyzes your aesthetic, brand pillars, and creative identity to produce 
-                refined, on-brand content ideas.
+                StyleKit understands your visual world like a creative partner and generates daily content ideas that feel authentically you — not someone else's aesthetic.
             </p>
-            <button class="cta-button" data-tally-open="D4ka8R" data-tally-layout="modal" data-tally-width="400">Apply for Early Access</button>
+            <a href="https://tally.so/r/LZZz8j" class="cta-button">Get Free Beta Access</a>
         </div>
         <div class="hero-image">
             <img src="hero-image.jpg" alt="StyleKit - Content strategy for fashion and lifestyle creators" loading="eager">
@@ -605,8 +630,28 @@
         </div>
     </section>
 
+    <!-- Waitlist Section -->
+    <section id="waitlist" class="waitlist-section fade-in">
+        <h2 class="section-title">Get Beta Access</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">
+            Join 50 fashion, beauty, and lifestyle creators getting early access to StyleKit at founder pricing.
+        </p>
+        
+        <div class="waitlist-card">
+            <span class="badge">Limited to First 50 Creators</span>
+            <h3>Reserve Your Spot</h3>
+            <a href="https://tally.so/r/LZZz8j" class="cta-button">Get My StyleKit</a>
+            <p class="waitlist-benefits">
+                ✓ Get notified when we launch<br>
+                ✓ Lock in $67 beta pricing (regular $197)<br>
+                ✓ No credit card required
+            </p>
+        </div>
+    </section>
+
     <!-- Pricing -->
-    <section id="pricing" class="fade-in" style="background: var(--light-gray); margin: 0; max-width: 100%;">
+    <section id="pricing" class="fade-in" style="background: white; margin: 0; max-width: 100%;">
         <h2 class="section-title">Beta Founder Pricing</h2>
         <div class="divider"></div>
         
@@ -627,7 +672,7 @@
                 <li>✓ Free aesthetic refreshes for 6 months</li>
             </ul>
             
-            <button class="cta-button" style="margin-top: 2rem;" data-tally-open="D4ka8R" data-tally-layout="modal" data-tally-width="400">Secure Your Spot — $67</button>
+            <a href="https://tally.so/r/LZZz8j" class="cta-button" style="margin-top: 2rem;">Get My StyleKit — $67</a>
         </div>
     </section>
 
@@ -661,7 +706,7 @@
             Join 50 fashion, beauty, and lifestyle creators building cohesive brands 
             without creative burnout.
         </p>
-        <button class="cta-button" data-tally-open="D4ka8R" data-tally-layout="modal" data-tally-width="400">Apply for Early Access</button>
+        <a href="https://tally.so/r/LZZz8j" class="cta-button">Create My Strategy</a>
     </section>
 
     <!-- Footer -->
