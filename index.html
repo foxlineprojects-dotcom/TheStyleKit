@@ -42,6 +42,64 @@
             letter-spacing: -0.02em;
         }
         
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 4rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(250, 248, 245, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(45, 45, 45, 0.1);
+        }
+        
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: var(--charcoal);
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent-dark);
+        }
+        
+        .nav-cta {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: var(--charcoal);
+            color: var(--cream);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-cta:hover {
+            background: var(--accent-dark);
+        }
+        
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -49,7 +107,7 @@
             grid-template-columns: 1fr 1fr;
             align-items: center;
             gap: 4rem;
-            padding: 2rem 4rem;
+            padding: 8rem 4rem 2rem;
             position: relative;
             overflow: hidden;
         }
@@ -404,9 +462,26 @@
         
         /* Responsive */
         @media (max-width: 768px) {
+            nav {
+                padding: 1rem 1.5rem;
+            }
+            
+            .nav-links {
+                gap: 1.5rem;
+            }
+            
+            .nav-link {
+                font-size: 0.85rem;
+            }
+            
+            .nav-cta {
+                padding: 0.6rem 1rem;
+                font-size: 0.75rem;
+            }
+            
             .hero {
                 grid-template-columns: 1fr;
-                padding: 2rem 1.5rem;
+                padding: 7rem 1.5rem 2rem;
                 min-height: auto;
                 gap: 2rem;
             }
@@ -467,12 +542,22 @@
     </style>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="nav-logo">StyleKit</a>
+        <div class="nav-links">
+            <a href="/blog/content-idea-spiral.html" class="nav-link">Blog</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="https://tally.so/r/LZZz8j" class="nav-cta">Get Access</a>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <span class="badge">For Fashion, Beauty & Lifestyle Creators</span>
             <h1>Tired of generic content ideas? Meet the AI that gets your style.</h1>
-            <div class="divider"></div>
+            <div class="divider" style="margin-left: 0;"></div>
             <p class="subheadline">
                 StyleKit understands your visual world like a creative partner and generates daily content ideas that feel authentically you — not someone else's aesthetic.
             </p>
@@ -711,8 +796,9 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 StyleKit. Your AI Creative Director.</p>
+        <p>&copy; 2026 StyleKit. Your AI Creative Director.</p>
         <p style="margin-top: 1rem; font-size: 0.9rem;">
+            <a href="/blog/content-idea-spiral.html">Blog</a> · 
             <a href="#">Privacy Policy</a> · 
             <a href="#">Terms of Service</a> · 
             <a href="mailto:hello@thestylekit.ai">hello@thestylekit.ai</a>
